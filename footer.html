@@ -1,49 +1,3 @@
-<!-- 雪花特效 -->
-<style>
-    .snowflake {
-        position: fixed;
-        top: -10px;
-        color: #fff;
-        font-size: 1em;
-        user-select: none;
-        z-index: 9999;
-        pointer-events: none;
-        animation: fall linear infinite;
-    }
-
-    @keyframes fall {
-        to {
-            transform: translateY(100vh);
-        }
-    }
-</style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const snowflakes = 50; // 雪花数量
-        const body = document.body;
-
-        for (let i = 0; i < snowflakes; i++) {
-            const snowflake = document.createElement("div");
-            snowflake.className = "snowflake";
-            snowflake.innerHTML = "❄";
-            snowflake.style.left = Math.random() * 100 + "vw";
-            snowflake.style.animationDuration = (Math.random() * 8 + 9) + "s"; // 飘落速度
-            snowflake.style.opacity = Math.random();
-            snowflake.style.fontSize = (Math.random() * 2.5 + 1.5) + "em"; // 随机大小
-            body.appendChild(snowflake);
-
-            // 雪花落地后重新生成
-            setTimeout(() => {
-                snowflake.remove();
-                body.appendChild(snowflake);
-            }, Math.random() * 5000 + 2000);
-        }
-    });
-</script>
-
-
-
 <div class="footer">
     <div class="links">
         <strong>友情链接：</strong>
@@ -57,26 +11,3 @@
         <img id="rocketIcon" src="https://via.placeholder.com/40?text=🚀" alt="返回顶部">
     </div>
 </div>
-
-
-
-<style>
-    .footer {
-        text-align: center;
-        padding: 15px;
-        background: #f0f0f0;
-        border-top: 2px solid #ddd;
-        margin-top: 30px;
-    }
-    .links {
-        margin-bottom: 8px;
-    }
-    .back-to-top {
-        position: fixed;
-        right: 20px;
-        bottom: 20px;
-        cursor: pointer;
-        width: 40px;
-        height: 40px;
-    }
-</style>
