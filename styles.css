@@ -1,3 +1,4 @@
+/* index.html 样式 */
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -5,9 +6,22 @@ body {
     box-sizing: border-box;
 }
 
+.back-to-home {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
 .back-to-home a {
     color: #0078ff;
     text-decoration: none;
+}
+
+.back-to-home a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
 }
 
 .container {
@@ -16,10 +30,124 @@ body {
     gap: 15px;
 }
 
+.item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit;
+    transition: background 0.3s;
+}
+
+.item:nth-child(1) {
+    background-color: #e6f7e6;
+}
+
+.item:nth-child(2) {
+    background-color: #f3e6ff;
+}
+
+.item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+
+.text {
+    flex: 1;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 14px;
+    color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+/* detail.html 样式 */
+.content h2 {
+    text-align: center;
+    font-size: 28px;
+}
+
+.date {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.article img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.source {
+    margin-top: 20px;
+    text-align: right;
+    color: #777;
+}
+
+.source a {
+    text-decoration: none;
+    color: #0078ff;
+}
+
+.source a:hover {
+    text-decoration: underline;
+}
+
+/* footer.html 样式 */
 .footer {
     text-align: center;
     padding: 15px;
     background: #f0f0f0;
     border-top: 2px solid #ddd;
     margin-top: 30px;
+}
+
+.links {
+    margin-bottom: 8px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+/* 雪花特效 */
+.snowflake {
+    position: fixed;
+    top: -10px;
+    color: #fff;
+    font-size: 1em;
+    user-select: none;
+    z-index: 9999;
+    pointer-events: none;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
 }
