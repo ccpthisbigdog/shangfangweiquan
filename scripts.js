@@ -31,9 +31,9 @@ function scrollToTop() {
 
     const rocketIcon = document.getElementById('rocketIcon');
     if (rocketIcon) {
-        rocketIcon.src = "https://via.placeholder.com/40?text=🎇";
+        rocketIcon.textContent = "🎇"; // 更换为烟花表情
         setTimeout(() => {
-            rocketIcon.src = "https://via.placeholder.com/40?text=🚀";
+            rocketIcon.textContent = "🚀"; // 恢复火箭表情
         }, 1500);
     }
 }
