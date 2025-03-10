@@ -1,0 +1,46 @@
+<div class="footer">
+    <div class="links">
+        <strong>友情链接：</strong>
+        <a href="https://github.com/ccpthisbigdog/ccpthisdog" target="_blank">github备份</a> |
+        <a href="https://github.com/ccpthisbigdog/freedomchina" target="_blank">免费翻墙节点</a>
+    </div>
+    <div class="copyright">
+        &copy; 2025 中国上访维权公示. 保留所有权利.
+    </div>
+    <div class="back-to-top" onclick="scrollToTop()">
+        <img id="rocketIcon" src="https://via.placeholder.com/40?text=🚀" alt="返回顶部">
+    </div>
+</div>
+
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+        const rocketIcon = document.getElementById('rocketIcon');
+        rocketIcon.src = "https://via.placeholder.com/40?text=🎇"; // 点击后更换为烟花图标
+        setTimeout(() => {
+            rocketIcon.src = "https://via.placeholder.com/40?text=🚀"; // 1.5秒后恢复火箭图标
+        }, 1500);
+    }
+</script>
+
+<style>
+    .footer {
+        text-align: center;
+        padding: 15px;
+        background: #f0f0f0;
+        border-top: 2px solid #ddd;
+        margin-top: 30px;
+    }
+    .links {
+        margin-bottom: 8px;
+    }
+    .back-to-top {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+</style>
