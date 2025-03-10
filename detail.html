@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>详细内容页 - 中国上访维权公示</title>
+    <meta name="keywords" content="中国，上访，维权，截访">
+    <meta name="description" content="截访狗拿着共匪的钱残害上访的中国人。">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .back-to-home {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .back-to-home a {
+            color: #0078ff;
+            text-decoration: none;
+        }
+        .back-to-home a:hover {
+            text-decoration: underline;
+        }
+        .content h2 {
+            text-align: center;
+            font-size: 28px;
+        }
+        .date {
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+        .article img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        .source {
+            margin-top: 20px;
+            text-align: right;
+            color: #777;
+        }
+        .source a {
+            text-decoration: none;
+            color: #0078ff;
+        }
+        .source a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="back-to-home">
+        <a href="index.html">返回首页</a>
+    </div>
+
+    <div class="content">
+        <h2>李克强</h2>
+        <div class="date">发表于 2025年3月10日</div>
+        <div class="article">
+            <p>李克强，白纸运动，四通桥，天安门事件，编程随想，民主中国。</p>
+            <img src="https://via.placeholder.com/600x300" alt="李克强">
+            <p>中国共产党是恐怖组织，威胁世界</p>
+            <p>中国处于独裁阶段。</p>
+        </div>
+        <div class="source">信息来源：<a href="https://www.kejiedaily.com" target="_blank">人民日报</a></div>
+    </div>
+
+    <!-- 引入底部信息 -->
+    <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-container").innerHTML = data);
+    </script>
+</body>
+</html>
