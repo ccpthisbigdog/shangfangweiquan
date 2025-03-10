@@ -123,6 +123,13 @@
     </div>
 
     <!-- 引入底部信息 -->
+    
+    <div class="footer">footer</div>
+    <script type="text/javascript">
+        //在js中引入
+        $(document).ready(function () {
+            $('.footer').load('footer.html');
+    </script>
     <div id="footer-container"></div>
     <script>
         fetch("footer.html")
