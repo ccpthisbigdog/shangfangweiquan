@@ -58,60 +58,7 @@
     </div>
 </div>
 
-<!-- 雪花特效 -->
-<style>
-    .snowflake {
-        position: fixed;
-        top: -10px;
-        color: #fff;
-        font-size: 1em;
-        user-select: none;
-        z-index: 9999;
-        pointer-events: none;
-        animation: fall linear infinite;
-    }
 
-    @keyframes fall {
-        to {
-            transform: translateY(100vh);
-        }
-    }
-</style>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const snowflakes = 50; // 雪花数量
-        const body = document.body;
-
-        for (let i = 0; i < snowflakes; i++) {
-            const snowflake = document.createElement("div");
-            snowflake.className = "snowflake";
-            snowflake.innerHTML = "❄";
-            snowflake.style.left = Math.random() * 100 + "vw";
-            snowflake.style.animationDuration = (Math.random() * 3 + 2) + "s"; // 飘落速度
-            snowflake.style.opacity = Math.random();
-            snowflake.style.fontSize = (Math.random() * 1.5 + 0.5) + "em"; // 随机大小
-            body.appendChild(snowflake);
-
-            // 雪花落地后重新生成
-            setTimeout(() => {
-                snowflake.remove();
-                body.appendChild(snowflake);
-            }, Math.random() * 5000 + 2000);
-        }
-    });
-</script>
-<script>
-    function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-
-        const rocketIcon = document.getElementById('rocketIcon');
-        rocketIcon.src = "https://via.placeholder.com/40?text=🎇"; // 点击后更换为烟花图标
-        setTimeout(() => {
-            rocketIcon.src = "https://via.placeholder.com/40?text=🚀"; // 1.5秒后恢复火箭图标
-        }, 1500);
-    }
-</script>
 
 <style>
     .footer {
