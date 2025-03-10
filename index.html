@@ -3,81 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 中国上访维权公示 - 没有墙</title>
+    <title>中国上访维权公示 - 没有墙</title>
     <meta name="keywords" content="中国，共匪，上访，维权">
     <meta name="description" content="让更多的中国人看到共产党作为恐怖组织管理的中国里那些蒙受冤屈的中国人，他们上访维权遇到共匪的截访狗暴力阻拦。">
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        .back-to-home {
-            text-align: left;
-            margin-bottom: 10px;
-        }
-        .back-to-home a {
-            color: #0078ff;
-            text-decoration: none;
-        }
-        .back-to-home a:hover {
-            text-decoration: underline;
-        }
-        h1 {
-            text-align: center;
-        }
-        .visit-home {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        .item {
-            display: flex;
-            align-items: center;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            text-decoration: none;
-            color: inherit;
-            transition: background 0.3s;
-        }
-        .item:nth-child(1) {
-            background-color: #e6f7e6; /* 淡绿色 */
-        }
-        .item:nth-child(2) {
-            background-color: #f3e6ff; /* 淡紫色 */
-        }
-        .item img {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-left: 15px;
-        }
-        .text {
-            flex: 1;
-        }
-        .title {
-            font-weight: bold;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
-        .description {
-            font-size: 14px;
-            color: #555;
-        }
-
-        /* 隐藏C 和 D */
-        .hidden {
-            display: none;
-        }
-    </style>
+    
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="back-to-home">
@@ -103,7 +33,6 @@
             <img src="https://via.placeholder.com/100" alt="上访维权">
         </a>
 
-        <!-- 白纸运动 C（默认隐藏） -->
         <a href="detail.html" class="item hidden">
             <div class="text">
                 <div class="title">白纸运动</div>
@@ -112,7 +41,6 @@
             <img src="https://via.placeholder.com/100" alt="产品 C">
         </a>
 
-        <!-- 四通桥 （默认隐藏） -->
         <a href="detail.html" class="item hidden">
             <div class="text">
                 <div class="title">四通桥</div>
@@ -122,15 +50,7 @@
         </a>
     </div>
 
-    <!-- 引入底部信息 -->
     <div id="footer-container"></div>
-    <script>
-        fetch("footer.html")
-            .then(response => response.text())
-            .then(data => document.getElementById("footer-container").innerHTML = data);
-    </script>
-
-
-
+    <script src="scripts.js"></script>
 </body>
 </html>
