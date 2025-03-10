@@ -134,6 +134,12 @@ h1 {
     height: 40px;
 }
 
+.back-to-top span {
+    font-size: 24px; /* 调整表情符号大小 */
+    line-height: 40px; /* 垂直居中 */
+    display: block;
+}
+
 /* 雪花特效 */
 .snowflake {
     position: fixed;
