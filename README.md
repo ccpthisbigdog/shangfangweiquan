@@ -5,7 +5,6 @@
 [浏览本站https://ccpthisbigdog.github.io/shangfangweiquan](https://ccpthisbigdog.github.io/shangfangweiquan/)
 
 
-<iframe src="https://ccpthisdog.org" width="100%" height="500"></iframe>
 
 # 上访维权公示榜
 
@@ -21,12 +20,3 @@
 - **四通桥**：这是一款专为专业人士设计的四通桥，具备强大功能和出色的可靠性。
 
 ---
-
-> **免责声明**：本页面仅供参考，内容来源于公开信息，不构成任何法律意见。
-<iframe
-height=850
-width=90%
-src="https://ccpthisdog.org"
-frameborder=0
-allowfullscreen>
-</iframe>
