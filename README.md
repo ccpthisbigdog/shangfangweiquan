@@ -4,8 +4,7 @@
 
 [浏览本站https://ccpthisbigdog.github.io/shangfangweiquan](https://ccpthisbigdog.github.io/shangfangweiquan/)
 
-[https://ccpthisdog.org]
-(https://ccpthisdog.org)
+[https://ccpthisdog.org](https://ccpthisdog.org)
 
 # 上访维权公示榜
 
