@@ -5,7 +5,7 @@ fetch("footer.html")
 
 // 雪花特效
 document.addEventListener("DOMContentLoaded", function () {
-    const snowflakes = 6; // 雪花数量
+    const snowflakes = 6; // 雪花数量 6月飞雪
     const body = document.body;
 
     for (let i = 0; i < snowflakes; i++) {
